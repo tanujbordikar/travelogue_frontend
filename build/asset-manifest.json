@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e33c8b44.css",
+    "main.js": "/static/js/main.f4cc7579.js",
+    "static/media/travelogue-logo.png": "/static/media/travelogue-logo.097d6abe5c6dee22d90b.png",
+    "static/media/travelogue-text.png": "/static/media/travelogue-text.b136444518ddb6deed78.png",
+    "index.html": "/index.html",
+    "main.e33c8b44.css.map": "/static/css/main.e33c8b44.css.map",
+    "main.f4cc7579.js.map": "/static/js/main.f4cc7579.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e33c8b44.css",
+    "static/js/main.f4cc7579.js"
+  ]
+}
