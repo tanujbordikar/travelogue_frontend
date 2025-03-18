@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://travelogue-server.onrender.com' });
+const API = axios.create({ baseURL: process.env.SERVER_URL });
 API.interceptors.request.use((req) => {
    if(localStorage.getItem('profile')) {
       req.headers.authorization = `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`;
    } 
    return req;
 });
-const user=JSON.parse(localStorage.getItem('profile'));
+const user = localStorage.getItem('profile') ? JSON.parse(localStorage.getItem('profile')) : null;
 
 export const fetchPost = (id) => API.get(`/posts/${id}`);
 export const fetchPosts = (page) => API.get(`/posts?page=${page}`);
